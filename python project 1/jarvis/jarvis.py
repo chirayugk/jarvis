@@ -24,7 +24,7 @@ def wishme():
         speak("good evening sir")
     else:
         speak("good night sir")  
-    #speak("my name is niga and here iam to help you ")
+    speak("chirayu boss  here i am  at your service  ")
 
 def takecommand():
     '''it takes microphone input from 
@@ -74,3 +74,7 @@ if __name__=="__main__":
             elif "the time " in query:
                 strTime=datetime.datetime.now().strftime("%H%M%S") 
                 speak(f"sir the time is {strTime}")   
+
+            elif "open code " in query:
+                codePath="C:\\Users\\DELL\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+                os.startfile(codePath)
